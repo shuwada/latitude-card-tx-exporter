@@ -22,7 +22,11 @@ Then, [install the script from GitHub](https://raw.githubusercontent.com/shuwada
 
 ## Usage
 
-When you have posted transactions, you see a link "Download Posted Transactions" above the list of transactions. Clicking the link starts downloading a CSV file. A CSV file contains only posted transactions displayed on the page. If you would like to download past transactions, select the period, then, download transactions.
+When you have posted transactions, you see a link "Download Posted Transactions" above the list of transactions.
+
+![Screenshot](screenshot.png)
+
+Clicking the link starts downloading a CSV file. A CSV file contains only posted transactions displayed on the page. If you would like to download past transactions, select the period, then, download transactions.
 
 The data format is:
 
