@@ -38,7 +38,7 @@ function transactionToCsv() {
         const payer = tx.querySelector('div[name="Transaction_CardName"]').textContent.trim();
         const desc = tx.querySelector('div[name="Transaction_TransactionDescription"]').textContent.trim().replace(/\s+/g, ' ');
         const amount = tx.querySelector('div[name="Transaction_Amount"]').textContent.trim();
-        return [toISODate(date), payer, desc, amount].join(',');
+        return [toISODate(date), payer, desc, amount].map(e => `"${e}"`).join(',');
 	});
     return csv.join('\n');
 }
